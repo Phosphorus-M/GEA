@@ -1,0 +1,31 @@
+.grid{
+    display: grid;
+}
+
+.grid-col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 767px) { 
+.grid-col-3{
+    grid-template-columns: 1fr 1fr;
+
+}
+}
+@media (max-width: 480px) { 
+.grid-col-3{
+    grid-template-columns: 1fr;
+
+}
+}
+
+
+.grid-col-3 > div{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: .25rem;
+    border-color: rgba(0, 0, 0, .1);
+
+}
