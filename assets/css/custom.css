@@ -1,0 +1,10 @@
+.subtitle_gea{
+    font-weight: bold;
+    color:white;
+    line-height: 0.1;
+    position: relative;
+    bottom: 20px;
+}
+header.major .spotlight .image{
+  margin: 0;
+}
