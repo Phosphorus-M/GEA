@@ -24,6 +24,9 @@ header.major .spotlight .image{
 .grid img{
   max-width: 100%;
 }
+#ultraLogros.features li{
+  margin-top: 0;
+}
 
 @media (orientation: portrait) {
   #principios span.image.main{
