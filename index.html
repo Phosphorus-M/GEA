@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -202,15 +204,32 @@
 						<p class="copyright">&copy; Grupo de Estudiantes Autoconvocados</p>
 					</footer>
 			</div>
-
+			<aside>
+			  <div class="outer-close toggle-overlay">
+			    <a class="close"><span></span></a>
+			  </div>
+			  <nav>
+			    <ul>
+			      <li><h1>Faltan</h1></li>
+						<li><div class="reloj" title="El evento ya ha pasado">10/22/2018 12:00</div></li>
+						<li><h1>para las elecciones.</h1></li>
+			    </ul>
+			  </nav>
+			</aside>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/modal.js" charset="utf-8"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/cuenta-atras.js" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(function(){
+		  	    $('.reloj').cuentaAtras();
+				});
+			</script>
 	</body>
 </html>
