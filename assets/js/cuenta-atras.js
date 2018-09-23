@@ -30,7 +30,7 @@
       var elem = $(".reloj");
 			elem.mouseover().removeAttr("title");
 			elem.mouseover().removeAttr("alt");
-			$(id).html ("<h2>"+dia+" Días "+hora+" Horas "+min+" Minutos </h2>");
+			$(id).html ("<h2>"+dia+" DÍAS "+hora+" HORAS Y "+min+" MINUTOS </h2>");
 			setTimeout("$.fn.cuentaAtras.refresca(" + (secs-1) + ", '" + id + "', '"+ mensaje +"')", 1000);
 		};
 		return this;

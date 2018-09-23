@@ -21,41 +21,35 @@ aside.open {
 	opacity: 1;
 	visibility: visible;
 }
-aside nav {
+#header {
   text-align: center;
-  height: 95vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
-aside nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-aside nav ul li {
+
+#header {
   align-items: center;
   flex: 1;
-  line-height: 20vh;
+  line-height: 10vh;
 }
-aside nav ul li .reloj {
+#header .reloj {
   font-size: 1.5em;
   transition: all 0.5s ease;
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
-aside nav ul li .reloj:hover {
+#header .reloj:hover {
   color: rgba(255, 255, 255, 0.9);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-aside nav ul li .reloj:hover:before {
+#header .reloj:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
-aside nav ul li .reloj:before {
+#header .reloj:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -69,49 +63,19 @@ aside nav ul li .reloj:before {
   transition: all 0.3s ease-in-out 0s;
 }
 @media screen and (min-width: 600px) {
-  aside nav ul li .reloj {
-    font-size: 3em;
+  #header .reloj {
     border-width: 0;
   }
 }
 
 
 div .close {
-  position: fixed;
-  top: 40px;
-  right: 60px;
   color: white;
   z-index: 3;
   cursor: pointer;
   font-family: sans-serif;
 }
-div .close span,
-div .close span:before,
-div .close span:after {
-  border-radius: 4px;
-  height: 5px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-div .close span {
-  background: transparent;
-}
-div .close span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-div .close span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
+
 div.outer-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 85px;
-  height: 85px;
   cursor: pointer;
 }
