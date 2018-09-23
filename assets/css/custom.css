@@ -8,3 +8,27 @@
 header.major .spotlight .image{
   margin: 0;
 }
+#principios .icon.major{
+  padding: 0;
+  margin: 0;
+}
+.button.primary i.icon{
+  border: 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid img{
+  max-width: 100%;
+}
+
+@media (orientation: portrait) {
+  #principios span.image.main{
+    display: none;
+  }
+
+
+}
