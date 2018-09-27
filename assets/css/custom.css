@@ -5,6 +5,9 @@
     position: relative;
     bottom: 20px;
 }
+.header a{
+  border-bottom: 0;
+}
 header.major .spotlight .image{
   margin: 0;
 }
